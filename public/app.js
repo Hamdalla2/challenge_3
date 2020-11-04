@@ -25,11 +25,15 @@ var c=function(){
 
 var d=function(){
     var x=document.getElementById('x')
+    var s=""
     o["creditcard"]=x.childNodes[1].value
     o["expiry"]=x.childNodes[3].value
     o["cvv"]=x.childNodes[5].value
     o["zipcodecc"]=x.childNodes[7].value
-    x.innerHTML=o+"<br><button onclick=e(o)>Purchase</button>"
+    for(var i in o){
+    s+=i+" : "+o[i]+"\n"
+    }
+    x.innerHTML=s+"<br><button onclick=e(o)>Purchase</button>"
 }
 
 var e=function(o){
