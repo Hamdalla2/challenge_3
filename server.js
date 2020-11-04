@@ -1,5 +1,5 @@
 const express = require('express');
-const db = reuire('database');
+const db = require('./database');
 let app = express();
 
 app.use(express.static(__dirname + '/public'));
@@ -8,11 +8,9 @@ app.use(express.urlencoded({ extended: true }));
 
 
 app.post('/db', function (req, res) {
-    helpers.getReposByUsername(req.body.username).then((data)=>{
-      db.save(data)
-      res.send(data).end()
-    })
-  });
+    db.save(req.body)
+    res.status(201).send("Data Sent")
+});
   
   app.get('/db', function (req, res) {
     db.find((err, data) => {
