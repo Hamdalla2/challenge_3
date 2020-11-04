@@ -1,5 +1,6 @@
 var o={}
 var a=function(){
+    o={}
     document.getElementById('x').innerHTML="<div>Name</div><input type=text><div>E-Mail</div><input type=text><div>Password</div><input type=text><br><button onclick=b()>Next</button>"
 }
 
@@ -41,6 +42,6 @@ var e=function(o){
     url:'http://127.0.0.1:3000/db',
     method:'post',
     data:JSON.stringify(o),
-    success:(result)=>{document.getElementById('x').innerHTML=result}
+    success:(result)=>{document.getElementById('x').innerHTML=result+"<br><button onClick=a()>Checkout Again</button>"}
     })
 }
