@@ -1,33 +1,15 @@
 class App extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { 
-    }
+    this.state = {    }
   }
-
   render () {
-    return (<div>
-      <button onclick="F1.render()">Checkout</button>
+    return (<div id="x">
+      <br></br>
+      <button onClick={a}>Checkout</button>
     </div>)
   }
 }
 
-
-class F1 extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = { a:
-      '<button onclick="c()">Next</button>'
-    }
-  }
-
-  render () {
-    return (
-    <div>
-    <button onclick="c()">Checkout</button>
-    </div>
-    )
-  }
-}
 
 ReactDOM.render(<App />, document.getElementById('app'));

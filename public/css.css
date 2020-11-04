@@ -1,5 +1,5 @@
 body {
-    background-color:turquoise;
+    background-image:url("shop.jpg");
     background-repeat:no-repeat;
     background-size: 100% 100%;
     background-attachment: fixed;
@@ -7,47 +7,23 @@ body {
     flex-flow: column;
     justify-content:center;
     align-items:center;
+    color:blue
 }
 body *{    
     display:flex;
     flex-flow: column;
     justify-content:center;
     align-items:center;
-}
-textarea{
-    color:yellow;
-    background-color: green;
-    border-radius: 12px;
-    height:100px;
-    width:800px;
-    outline: none;
-}
-textarea::placeholder{
-    color:cyan;
+    color:blue
 }
 button{
-    color:yellow;
-    background-color: green;
-    border-radius: 12px;
-    border-color: green;
-    height:30px;
-    width:200px;
-    outline: none;
-}
-input[type='file']{
-    color:yellow;
-    background-color: green;
+    color:blue;
+    background-color: gold;
     border-radius: 12px;
     height:30px;
     width:200px;
     outline: none;
-	opacity: 0;
-	position: absolute;
 }
-#up{
-    color:yellow;
-    background-color: green;
-    border-radius: 12px;
-    height:30px;
-    width:200px;
+#x{
+    margin-top: 200px;
 }
