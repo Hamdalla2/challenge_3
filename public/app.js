@@ -33,7 +33,7 @@ var d=function(){
     for(var i in o){
     s+=i+" : "+o[i]+"\n"
     }
-    x.innerHTML=s+"<br><button onclick=e(o)>Purchase</button>"
+    x.innerHTML="<pre>"+s+"</pre><br><button onclick=e(o)>Purchase</button>"
 }
 
 var e=function(o){
